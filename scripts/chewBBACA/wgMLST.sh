@@ -1,0 +1,1 @@
+chewBBACA.py AlleleCall -i /data/data/new_extraction/only_genomes_no_redundant/  -g /data/analysis/2025_06_05_redo_tree_without_redundant/staphy_schema/schema_seed -o /data/analysis/2025_06_05_redo_tree_without_redundant/staphy_wgMLST --cpu 26

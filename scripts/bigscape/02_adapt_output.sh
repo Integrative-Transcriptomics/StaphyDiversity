@@ -1,0 +1,1 @@
+cut -f2 /ceph/ibmi/it/projects/CMFI/Strains_Staphyloccocus_Analysis/analysis/more_analysis/lugdunensis/bigscape/reproduce_query_NRPS/output/output_files/2025-09-20_11-25-14_c0.3/mix/mix_clustering_c0.3.tsv > overview_GBK.txt

@@ -1,0 +1,1 @@
+chewBBACA.py RemoveGenes -i /data/analysis/2025_06_05_redo_tree_without_redundant/staphy_wgMLST/results_20250605T150845/results_alleles.tsv -g /data/analysis/2025_06_05_redo_tree_without_redundant/staphy_wgMLST/results_20250605T150845/paralogous_counts.tsv -o /data/analysis/2025_06_05_redo_tree_without_redundant/staphy_wgMLST2/results_alleles_NoParalogs.tsv

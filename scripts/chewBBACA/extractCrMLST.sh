@@ -1,0 +1,1 @@
+chewBBACA.py ExtractCgMLST -i /data/analysis/2025_06_05_redo_tree_without_redundant/staphy_wgMLST2/results_alleles_NoParalogs.tsv -o /data/analysis/2025_06_05_redo_tree_without_redundant/staphy_wgMLST2/cgMLST

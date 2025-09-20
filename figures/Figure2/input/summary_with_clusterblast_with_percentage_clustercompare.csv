@@ -1,0 +1,85 @@
+;genome;number_of_records;unknown;staphyloferrin A;staphyloferrin B;staphylopine
+GCF_001500315.1;Staphylococcus auricularis;1;0;100.0;0.0;0.0
+GCF_002901995.1;Staphylococcus coagulans;3;0;100.0;100.0;100.0
+GCF_000338275.1;Staphylococcus xylosus NJ;2;0;100.0;0.0;100.0
+GCF_004785665.1;Staphylococcus pragensis;1;0;100.0;0.0;0.0
+GCF_900183575.1;Staphylococcus cornubiensis;3;0;100.0;100.0;100.0
+GCF_017583065.1;Staphylococcus shinii;2;0;100.0;0.0;100.0
+GCF_943737015.1;Staphylococcus sp. Marseille-Q5304;1;0;100.0;0.0;0.0
+GCF_000934465.1;Staphylococcus microti;1;0;100.0;0.0;0.0
+GCF_002902625.1;Staphylococcus devriesei;1;0;100.0;0.0;0.0
+GCF_002902575.1;Staphylococcus croceilyticus;1;0;100.0;0.0;0.0
+GCF_002902085.1;Staphylococcus simiae;1;0;100.0;0.0;0.0
+GCF_003970495.1;Staphylococcus pasteuri;2;0;100.0;0.0;100.0
+GCF_002902565.1;Staphylococcus petrasii;1;0;100.0;0.0;0.0
+GCF_024814435.1;Staphylococcus americanisciuri;1;0;100.0;0.0;0.0
+GCF_020883535.1;Staphylococcus ratti;3;0;75.0;100.0;100.0
+GCF_002902685.1;Staphylococcus pettenkoferi;2;1;75.0;0.0;0.0
+GCF_001431205.1;Staphylococcus sp. NAM3COL9;1;0;100.0;0.0;0.0
+GCF_026659735.1;Staphylococcus pettenkoferi;2;1;75.0;0.0;0.0
+GCF_025558425.1;Staphylococcus sp. IVB6240;1;0;100.0;0.0;0.0
+GCF_002902235.1;Staphylococcus ureilyticus;2;0;[75.0, 25.0];0.0;0.0
+GCF_002902325.1;Staphylococcus capitis subsp. capitis;1;0;100.0;0.0;0.0
+GCF_002732165.1;Staphylococcus xylosus;2;0;100.0;0.0;100.0
+GCF_022493055.1;Staphylococcus roterodami;3;0;100.0;100.0;100.0
+GCF_029024945.1;Staphylococcus succinus;1;0;100.0;0.0;0.0
+GCF_000875895.1;Staphylococcus gallinarum;1;0;100.0;0.0;0.0
+GCF_016238445.1;Staphylococcus canis;1;0;100.0;0.0;0.0
+GCF_022815905.2;Staphylococcus sp. NRL 16/872;1;0;100.0;0.0;0.0
+GCF_002902365.1;Staphylococcus cohnii subsp. cohnii;1;0;100.0;0.0;0.0
+GCF_003043455.1;Staphylococcus simulans;1;0;100.0;0.0;0.0
+GCF_002901705.1;Staphylococcus lugdunensis;1;1;0;0.0;0.0
+GCF_003019275.1;Staphylococcus muscae;1;0;100.0;0.0;0.0
+GCF_002902305.1;Staphylococcus argensis;2;1;75.0;0.0;0.0
+GCF_015775975.1;Staphylococcus lloydii;2;0;100.0;0.0;100.0
+GCF_900097965.1;Staphylococcus caeli;2;0;100.0;0.0;100.0
+GCF_900458815.1;Staphylococcus saccharolyticus;1;0;100.0;0.0;0.0
+GCF_022346615.1;Staphylococcus sp. ACRSN;1;0;100.0;0.0;0.0
+GCF_025561445.1;Staphylococcus sp. IVB6181;1;0;100.0;0.0;0.0
+GCF_002902285.1;Staphylococcus simulans;1;0;100.0;0.0;0.0
+GCF_000816085.1;Staphylococcus hyicus;3;0;100.0;100.0;100.0
+GCF_001747895.1;Staphylococcus equorum;2;0;75.0;100.0;0.0
+GCF_900186985.1;Staphylococcus piscifermentans;1;0;100.0;0.0;0.0
+GCF_003491325.1;Staphylococcus sp. M0911;2;0;100.0;0.0;100.0
+GCF_029531845.1;Staphylococcus equorum;2;0;75.0;100.0;0.0
+GCF_002901845.1;Staphylococcus hominis subsp. hominis;1;0;75.0;0.0;0.0
+GCF_025558585.1;Staphylococcus sp. IVB6214;1;0;100.0;0.0;0.0
+GCF_002902345.1;Staphylococcus arlettae;2;0;75.0;100.0;0.0
+GCF_006094395.1;Staphylococcus haemolyticus;1;0;100.0;0.0;0.0
+GCF_029024625.1;Staphylococcus chromogenes;2;0;100.0;0.0;100.0
+GCF_001027105.1;Staphylococcus aureus;3;0;100.0;100.0;100.0
+GCF_029024965.1;Staphylococcus equorum;2;0;75.0;100.0;0.0
+GCF_002901865.1;Staphylococcus agnetis;3;0;100.0;100.0;100.0
+GCF_900458435.1;Staphylococcus carnosus;1;0;100.0;0.0;0.0
+GCF_002101335.1;Staphylococcus lutrae;3;0;100.0;100.0;100.0
+GCF_000298075.1;Staphylococcus massiliensis CCUG 55927;1;0;100.0;0.0;0.0
+GCF_016238465.1;Staphylococcus caledonicus;1;0;100.0;0.0;0.0
+GCF_002902725.1;Staphylococcus caprae;2;0;100.0;0.0;100.0
+GCF_900636385.1;Staphylococcus warneri;2;0;100.0;0.0;100.0
+GCF_000010125.1;Staphylococcus saprophyticus subsp. saprophyticus ATCC 15305 = NCTC 7292;1;0;100.0;0.0;0.0
+GCF_001792775.2;Staphylococcus pseudintermedius;3;0;100.0;100.0;100.0
+GCF_002902385.1;Staphylococcus intermedius NCTC 11048;3;0;100.0;100.0;100.0
+GCA_020544305.1;Staphylococcus taiwanensis;1;0;100.0;0.0;0.0
+GCF_002902405.1;Staphylococcus schweitzeri;3;0;100.0;100.0;100.0
+GCF_900636325.1;Staphylococcus delphini;3;0;100.0;100.0;100.0
+GCA_023665865.1;Staphylococcus sp.;0;0;0;0.0;0.0
+GCF_006742205.1;Staphylococcus epidermidis;2;0;100.0;0.0;100.0
+GCF_014635045.1;Staphylococcus nepalensis;1;0;100.0;0.0;0.0
+GCF_010365305.1;Staphylococcus sp. MI 10-1553;3;0;100.0;100.0;100.0
+GCF_003012915.1;Staphylococcus felis;2;0;100.0;0.0;100.0
+GCF_000236925.1;Staphylococcus argenteus;3;0;100.0;100.0;100.0
+GCF_001224225.1;Staphylococcus borealis;1;0;100.0;0.0;0.0
+GCF_003718735.1;Staphylococcus debuckii;1;0;100.0;0.0;0.0
+GCF_003697915.1;Staphylococcus pseudoxylosus;2;0;100.0;0.0;100.0
+GCF_025519785.1;Staphylococcus marylandisciuri;2;1;75.0;0.0;0.0
+GCF_900458895.1;Staphylococcus schleiferi;3;0;100.0;100.0;100.0
+GCF_001618885.1;Staphylococcus condimenti;1;0;100.0;0.0;0.0
+GCF_003019255.1;Staphylococcus kloosii;1;0;100.0;0.0;0.0
+GCA_000433035.1;Staphylococcus sp. CAG:324;0;0;0;0.0;0.0
+GCF_002902145.1;Staphylococcus rostri;1;0;100.0;0.0;0.0
+GCF_013463155.1;Staphylococcus sp. 17KM0847;1;0;100.0;0.0;0.0
+GCA_945870555.1;Staphylococcus epidermidis;0;0;0;0.0;0.0
+GCF_013391405.1;Staphylococcus sp. GSSP0090;2;0;100.0;0.0;100.0
+GCF_017357005.1;Staphylococcus simiae;1;0;100.0;0.0;0.0
+GCF_015594545.1;Staphylococcus durrellii;2;0;100.0;0.0;75.0
+GCF_002614725.1;Staphylococcus edaphicus;2;0;100.0;0.0;100.0

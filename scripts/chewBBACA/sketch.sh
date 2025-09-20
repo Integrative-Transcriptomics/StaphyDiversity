@@ -1,0 +1,1 @@
+chewBBACA.py CreateSchema -i /data/data/new_extraction/only_genomes_no_redundant/ -o /data/analysis/2025_06_05_redo_tree_without_redundant/staphy_schema --ptf /data/analysis/2025_06_05_redo_tree_without_redundant/reference_saureus/saureus.trn --cpu 28
