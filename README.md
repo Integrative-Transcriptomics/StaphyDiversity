@@ -2,7 +2,7 @@
 
 This repository scripts used for the computation of data and figures for the mentioned manuscript. 
 
-The folder ``scripts`` collects how the tools used for data generation (``antiSMASH``, ``MMseqs2`` and ``chewBBACA``) were used. 
+The folder ``scripts`` collects the scripts stating how the data was collected (``data_accession``) as well as how the further data was generated with the selected tools (``antiSMASH``, ``MMseqs2``, ``chewBBACA`` and ``BiG-SCAPE``).
 
-The folder ``figures`` shows how the data were further processed to generate the figures of the manuscript. 
+The folder ``figures`` gathers the scripts used for the generation of Figures 2 and 6, as well as their further processed input data. 
 

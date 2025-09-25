@@ -23,10 +23,9 @@ head(gtdb_data)
 sum(duplicated(gtdb_data$gtdb_species_name))
 # trim every entry
 antismash_overview <- as.data.frame(lapply(antismash_overview, function(x) trimws(x, which = c("both"))))
-head(antismash_overview)
+
 # for the alst three columns, we need to convert the values to numeric
 antismash_overview$staphyloferrin.A <-as.numeric(antismash_overview$staphyloferrin.A)
-head(antismash_overview)
 antismash_overview$staphyloferrin.B <- as.numeric(antismash_overview$staphyloferrin.B)
 antismash_overview$staphylopine<- as.numeric(antismash_overview$staphylopine)
 antismash_overview$Others <- as.numeric(antismash_overview$unknown)
@@ -36,14 +35,11 @@ antismash_overview <- merge(antismash_overview, gtdb_data, by.x = "X", by.y = "a
 
 sorted_antismash_overview <- antismash_overview %>% arrange(number_of_records, staphyloferrin.A, staphyloferrin.B, staphylopine, Others, gtdb_species_name)
 export_antismash_overview <- sorted_antismash_overview[c("gtdb_species_name", "number_of_records", "staphyloferrin.A", "staphyloferrin.B", "staphylopine", "Others")]
-head(export_antismash_overview)
 
 # replace Others column by nothing if 0, otherwise write True
 export_antismash_overview$Others <- ifelse(export_antismash_overview$Others == 0, "", "True")
 # sum over number of records
 sum(as.numeric(export_antismash_overview$number_of_records))
-# write csv
-write.csv(export_antismash_overview, paste(output_path, "overview_antiSMASH_with_percentage_for_publication_clustercompare.csv", sep = ""), row.names = FALSE)
 
 antismash_overview_subset <- antismash_overview[c("gtdb_species_name","staphyloferrin.A", "staphyloferrin.B", "staphylopine")]
 antismash_metadata <- antismash_overview_subset
@@ -64,8 +60,6 @@ staphyloferrin_A_incomplete <- antismash_overview[antismash_overview$staphylofer
 staphyloferrin_A_incomplete <- staphyloferrin_A_incomplete[!is.na(staphyloferrin_A_incomplete$gtdb_species_name),]
 # from the columns gtdb_species_name and genome create a named list
 named_list <- setNames(as.list(antismash_overview$gtdb_species_name), antismash_overview$X)
-# export staphyloferrin.A incomplete species to csv
-write.csv(staphyloferrin_A_incomplete, paste(output_path, "staphyloferrin_A_incomplete_species_cluster_compare.csv", sep = ""), row.names = FALSE, quote = FALSE)
 
 # from antimsash_overview$genome remove the ending with .[0-9] and create a named list
 antismash_overview$X <- gsub("\\.[0-9]", "", antismash_overview$X)
@@ -79,6 +73,10 @@ rename_tree <- function(tree, named_list){
   }
   return(tree)
 }
+
+# Create a reverse named_list
+reverse_named_list <- setNames(as.list(antismash_overview$X), antismash_overview$gtdb_species_name)
+
 # for Staphylococcus lugdunensis, manual inspection showed that the BGC was not identified as Staphyloferrin A but as other. 
 # So set to Incomplete BGC for staphyloferrin.A
 antismash_metadata["Staphylococcus lugdunensis", "staphyloferrin.A"] <- "Incomplete BGC"
@@ -237,3 +235,30 @@ viz_contigs
 # export figure
 ggsave(paste(output_path,"heatmap_overview_contigs.pdf", sep = ""), plot = viz_contigs, width = 30, height = 21, units = "cm", dpi = 600)
 # The figure needs to be edited in Inkscape to adapt the order of the legends, resort the columns and improve readability of text
+
+
+# Create overview table
+antismash_metadata$GTDB <- rownames(antismash_metadata)
+unknown_bgc$GTDB <- rownames(unknown_bgc)
+# add suffix _similarity to colnames
+colnames(mmseqs_combined_df) <- paste0(colnames(mmseqs_combined_df), "_similarity")
+mmseqs_combined_df$GTDB <- rownames(mmseqs_combined_df)
+# add suffix _hits to colnames
+colnames(mmseqs_hits_df) <- paste0(colnames(mmseqs_hits_df), "_hits")
+mmseqs_hits_df$GTDB <- rownames(mmseqs_hits_df)
+contig_overview_df$GTDB <- rownames(contig_overview_df)
+
+# Join all by rownames
+overview_table <- Reduce(function(x, y) merge(x, y, by = "GTDB"), list(antismash_metadata, unknown_bgc, mmseqs_combined_df, mmseqs_hits_df, contig_overview_df))
+# add column accession code
+overview_table$accession <- reverse_named_list[overview_table$GTDB]
+# change to character
+overview_table$accession <- as.character(overview_table$accession)
+# Sort columns
+overview_table <- overview_table[c("accession", "GTDB", "assembly_level", "sfa", "sbn", "cnt", "others", "htsA_similarity", "sirA_similarity", "cntA_similarity", "fhuD1_similarity", "fhuD2_similarity", "sstD_similarity", "htsA_hits", "sirA_hits", "cntA_hits", "fhuD1_hits", "fhuD2_hits", "sstD_hits")]
+colnames(overview_table)[1] <- "Accession NCBI"
+colnames(overview_table)[2] <- "GTDB species"
+colnames(overview_table)[3] <- "Assembly Level"
+
+# Export overview table
+write.csv(overview_table, file = paste0(output_path, "overview_table.csv", sep = ""), row.names = FALSE)
