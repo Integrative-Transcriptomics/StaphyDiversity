@@ -6,3 +6,5 @@ The folder ``scripts`` collects the scripts stating how the data was collected (
 
 The folder ``figures`` gathers the scripts used for the generation of Figures 2 and 6, as well as their further processed input data. 
 
+The folder ``supplementary`` gathers further data, such as an overview of all accession codes used, as well as a tabular visualizaiton of Figure 2. 
+
