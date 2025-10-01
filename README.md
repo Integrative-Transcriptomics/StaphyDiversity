@@ -8,3 +8,5 @@ The folder ``figures`` gathers the scripts used for the generation of Figures 2 
 
 The folder ``supplementary`` gathers further data, such as an overview of all accession codes used, as well as a tabular visualizaiton of Figure 2. 
 
+contact: mathias-alexander.witte-paz@uni-tuebingen.de
+

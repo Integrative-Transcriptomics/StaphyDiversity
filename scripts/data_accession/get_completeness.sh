@@ -1,4 +1,4 @@
-
+## Older file used to get the completeness
 for file in ../*.txt; do
 # get filename without path
     filename=$(basename -- "$file")

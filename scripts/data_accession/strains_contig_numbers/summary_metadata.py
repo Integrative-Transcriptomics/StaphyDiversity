@@ -9,12 +9,13 @@ def read_json(file_path):
             import os
             file_name = os.path.basename(file_path)
             file_name_without_ext = os.path.splitext(file_name)[0]
-            # get id between _all_ and _metadata
-            id_start = file_name_without_ext.find('_all_') + len('_all_')
+            # get id between assembly_completeness and _metadata
+            id_start = file_name_without_ext.find('_assembly_completeness_') + len('_assembly_completeness_')
             id_end = file_name_without_ext.find('_metadata')
             genome_id = file_name_without_ext[id_start:id_end]
             return genome_id
         return json_data.get("reports")[0]
+
 def get_assembly_stats(json_file): 
     """
     Extracts the assembly statistics from a JSON file.
@@ -42,10 +43,8 @@ def main():
     import glob
 
     # Path to the directory containing the JSON files
-    # json_dir = '/ceph/ibmi/it/projects/CMFI/Strains_Staphyloccocus_Analysis/data/capitis/metadata'
-    # json_dir = '/ceph/ibmi/it/projects/CMFI/Strains_Staphyloccocus_Analysis/data/hominis/metadata'
-    # json_dir = '/ceph/ibmi/it/projects/CMFI/Strains_Staphyloccocus_Analysis/data/epidermidis/metadata'
-    json_dir = '/ceph/ibmi/it/projects/CMFI/Strains_Staphyloccocus_Analysis/data/lugdunensis/metadata'
+    # Change for each species
+    json_dir = 'lugdunensis/metadata'
 
     # Get all JSON files in the directory
     json_files = glob.glob(os.path.join(json_dir, '*.json'))

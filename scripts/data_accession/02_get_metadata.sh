@@ -1,0 +1,2 @@
+datasets summary genome accession --inputfile adapt_no_redundant_genome_ids.txt --as-json-lines | 
+    dataformat tsv genome --fields accession,organism-common-name,organism-name,organism-tax-id,organism-infraspecific-strain > metadata_with_strain.tsv

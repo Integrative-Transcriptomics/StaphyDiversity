@@ -1,2 +1,0 @@
-datasets summary genome accession --inputfile accession_codes_staphyloccoci.txt --as-json-lines | 
-    dataformat tsv genome --fields accession,organism-common-name,organism-name,organism-tax-id,organism-infraspecific-strain > metadata_with_strain.t
